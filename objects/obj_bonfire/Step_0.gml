@@ -1,0 +1,22 @@
+if(place_meeting(x+2,y+2,obj_player))
+{
+		with(obj_player)
+		{
+			hp = 3
+		}
+		instance_create_depth(self.x-64,self.y-240,2,obj_moves1_sword1)
+		instance_create_depth(self.x+64,self.y-240,2,obj_moves1_sword2)
+		instance_create_depth(self.x-64,self.y-176,2,obj_moves2_sword1)
+		instance_create_depth(self.x+64,self.y-176,2,obj_moves2_sword2)
+		instance_create_depth(self.x-64,self.y-112,2,obj_moves3_sword1)
+		instance_create_depth(self.x+64,self.y-112,2,obj_moves3_sword2)
+}
+else
+{
+	instance_destroy(obj_moves1_sword1)
+	instance_destroy(obj_moves1_sword2)
+	instance_destroy(obj_moves2_sword1)
+	instance_destroy(obj_moves2_sword2)
+	instance_destroy(obj_moves3_sword1)
+	instance_destroy(obj_moves3_sword2)
+}

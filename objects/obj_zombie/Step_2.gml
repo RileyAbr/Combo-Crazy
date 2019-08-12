@@ -1,0 +1,1 @@
+if(hurting > 0) hurting--
